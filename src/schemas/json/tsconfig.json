@@ -316,6 +316,7 @@
             },
             "jsx": {
               "description": "Specify what JSX code is generated.",
+              "type": ["string", "null"],
               "enum": [
                 "preserve",
                 "react",
@@ -645,6 +646,7 @@
             },
             "fallbackPolling": {
               "description": "Specify the polling strategy to use when the system runs out of or doesn't support native file watchers. Requires TypeScript version 3.8 or later.",
+              "type": ["string", "null"],
               "enum": [
                 "fixedPollingInterval",
                 "priorityPollingInterval",
@@ -657,6 +659,7 @@
             },
             "watchDirectory": {
               "description": "Specify the strategy for watching directories under systems that lack recursive file-watching functionality. Requires TypeScript version 3.8 or later.",
+              "type": ["string", "null"],
               "enum": [
                 "useFsEvents",
                 "fixedPollingInterval",
@@ -667,6 +670,7 @@
             },
             "watchFile": {
               "description": "Specify the strategy for watching individual files. Requires TypeScript version 3.8 or later.",
+              "type": ["string", "null"],
               "enum": [
                 "fixedPollingInterval",
                 "priorityPollingInterval",
@@ -997,6 +1001,7 @@
             },
             "moduleDetection": {
               "description": "Specify how TypeScript determine a file as module.",
+              "type": ["string", "null"],
               "enum": ["auto", "legacy", "force"]
             },
             "strictNullChecks": {
@@ -1019,6 +1024,7 @@
             },
             "importsNotUsedAsValues": {
               "description": "Specify emit/checking behavior for imports that are only used for types.",
+              "type": ["string", "null"],
               "default": "remove",
               "enum": ["remove", "preserve", "error"]
             },
